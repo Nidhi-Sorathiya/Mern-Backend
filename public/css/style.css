@@ -1,0 +1,16 @@
+.navbar-brand {
+  font-size: 1.9rem !important;
+  color: #000 !important;
+}
+.navbar a {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+.navbar a:hover {
+  color: #3498db !important;
+}
+.main_menu {
+  background: rgba(0, 77, 77, 0.9);
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}

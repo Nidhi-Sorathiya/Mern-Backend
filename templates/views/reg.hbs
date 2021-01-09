@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}}
+</head>
+
+<body>
+    {{>navbar}}
+    <!--/container-->
+    <div class="container ">
+
+        <!--/mrow-->
+        <div class="row">
+
+            <!--/col1-->
+            <div class="col-sm-4 p-0">
+            </div>
+            <!--/col1-->
+
+            <!--/col2-->
+            <div class="col-md-4 p-0 bg-danger my-5">
+                <div class="card border-secondary">
+                    <div class="card-body"
+                        style="background: rgba(0 77 77 / 81%);  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);">
+
+
+                        <form class="form pb-3" name="registration" action="/reg" method="POST">
+
+                            <h2 class="text-center py-1">Registration Info</h2>
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" name="name" class="form-control" placeholder="full name" required="">
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" name="email" class="form-control" placeholder="Email" required="">
+                            </div>
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input type="Password" name="password" class="form-control" placeholder="password"
+                                    required="">
+                            </div>
+                            <div class="form-group">
+                                <label>Confirm Password</label>
+                                <input type="password" name="cpassword" class="form-control"
+                                    placeholder="confirm password" required="">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" name="reg"
+                                    class="btn btn-success btn-lg float-right">Register</button>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <!--/col2-->
+
+            <!--/col3-->
+            <div class="col-sm-4 p-0">
+            </div>
+            <!--/col3-->
+
+
+        </div>
+        <!--/mrow-->
+
+    </div>
+    <!--/container-->
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}}
+</head>
+
+<body>
+    {{>navbar}}
+    <!--/container-->
+    <div class="container py-5 ">
+
+        <!--/mrow-->
+        <div class="row">
+
+            <!--/col1-->
+            <div class="col-sm-4 p-0">
+            </div>
+            <!--/col1-->
+
+            <!--/col2-->
+            <div class="col-md-4 p-0 bg-danger">
+                <div class="card border-secondary">
+                    <div class="card-body"
+                        style="background: rgba(0 77 77 / 81%);  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);">
+
+                        <form class="form px-5" action="/login" method="POST">
+
+                            <h2 class="card-title text-white mt-4">Login</h2>
+
+                            <div class="form-group" style="color: #a7a4a4;">
+                                <label>User Name</label>
+                                <input type="text" name="name" class="form-control" placeholder="Enter your Username"
+                                    required="">
+                            </div>
+                            <div class="form-group" style="color: #a7a4a4;">
+                                <label>Password</label>
+                                <input type="password" name="password" class="form-control"
+                                    placeholder="Enter your password" required="">
+                            </div>
+                            <div class="form-check form-group" style="color: #a7a4a4;">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" name="vehicle1" checked>Keep me
+                                    Signed in
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="reg" class="form-control bg-primary text-white"
+                                    value="Sign In">
+                            </div>
+                            <div class="border my-5"></div>
+                            <a href="/reg">Sign Up</a>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <!--/col2-->
+
+            <!--/col3-->
+            <div class="col-sm-4 p-0">
+            </div>
+            <!--/col3-->
+
+
+        </div>
+        <!--/mrow-->
+
+    </div>
+    <!--/container-->
+
+</body>
+
+</html>
