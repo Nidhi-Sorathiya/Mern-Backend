@@ -92,7 +92,7 @@ app.post("/login", async (req, res) => {
     const findlogin = await Student.findOne({
       $or: [{ email: email }, { name: email }],
     });
-
+    console.log(findlogin);
     const ismatch = await bcrypt.compare(password, findlogin.password);
 
     const token = await findlogin.generateAuthToken();
@@ -105,10 +105,10 @@ app.post("/login", async (req, res) => {
     if (ismatch) {
       res.status(200).render("index");
     } else {
-      ("pass or username not match");
+      res.status(200).render("login");
     }
   } catch (e) {
-    res.send(e);
+    res.status(200).render("login");
   }
 });
 
